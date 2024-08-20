@@ -7,7 +7,7 @@ import Services from './Pages/Services/Services'
 import Projects from './Pages/Projects/Projects'
 import Contacts from './Pages/Contacts/Contacts'
 import About from './Pages/About/About'
-import Footer from './Sections/Footer/footer'
+import Footer from './Sections/Footer/Footer'
 
 
 
