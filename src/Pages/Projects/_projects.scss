@@ -8,8 +8,10 @@
     margin:rem(10) 0;
   }
   &__gallery{
-    @include flex(row ,space-between,top,20);
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: rem(15);
+    row-gap: rem(15);
     margin:rem(60) 0 ;
   }
 }

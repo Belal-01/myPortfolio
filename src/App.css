@@ -132,7 +132,7 @@ section {
 }
 
 .project {
-  flex: 1 1 30%;
+  flex: 1 30% 30%;
   max-width: 31.25rem;
   position: relative;
   overflow: hidden;
@@ -577,14 +577,11 @@ section {
   margin: 0.625rem 0;
 }
 .projects__gallery {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: top;
-  -moz-column-gap: 1.25rem;
-       column-gap: 1.25rem;
-  row-gap: 1.25rem;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 0.9375rem;
+       column-gap: 0.9375rem;
+  row-gap: 0.9375rem;
   margin: 3.75rem 0;
 }
 
@@ -938,17 +935,13 @@ section {
     max-width: 90%;
   }
   .projects__gallery {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: 1fr;
+    justify-items: center;
     -moz-column-gap: 2.5rem;
          column-gap: 2.5rem;
     row-gap: 2.5rem;
-    flex-wrap: wrap;
   }
   .project {
-    flex: 1 1 80%;
     max-width: 90%;
   }
   .contact__form {
@@ -1015,15 +1008,25 @@ section {
     padding: 0 2%;
   }
   .projects__gallery {
-    padding: 0 5%;
-  }
-  .project {
-    flex: 1 1 40%;
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 1.5625rem;
+         column-gap: 1.5625rem;
+    row-gap: 1.5625rem;
+    justify-items: center;
   }
 }
-@media screen and (min-width: 999px) {
-  .project {
-    flex: 1 1 30%;
-    min-width: 17.5rem;
+@media screen and (min-width: 999px) and (max-width: 1150px) {
+  .projects__gallery {
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 1.5625rem;
+         column-gap: 1.5625rem;
+    row-gap: 1.5625rem;
+    justify-items: center;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .projects__gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
   }
 }/*# sourceMappingURL=App.css.map */
