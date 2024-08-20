@@ -67,7 +67,7 @@ const Home = () => {
         </pattern>
 
         {/* <!-- Insert your profile (recommended size: 640 x 940) --> */}
-        <image className='home__img--profile'  id="imageBlob" width="640" height="925" href="../../../public/img/photo_2024-08-17_12-44-32-removebg-preview.png"/>
+        <image className='home__img--profile'  id="imageBlob" width="640" height="925" href="../../../dist/img/photo_2024-08-17_12-44-32-removebg-preview.png"/>
         </defs>
         </svg>
       </div>
