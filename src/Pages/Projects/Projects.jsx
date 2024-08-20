@@ -16,12 +16,12 @@ const Projects = () => {
         <span className='title'>Recent Projects </span>
       </div>
       <div className="projects__gallery">
-        <Project video = {'CYBROG.mp4'} title = {'Games Viewer'} info={'Responseive website Worked using React ,Sass, with use of Database'} url ={'https://github.com/Belal-01/CYBROG-Game'}/>
-        <Project video = {'Amazon2.mp4'} title={'Amazon '} info={'Responseive website (Immitation of Amazon) Worked using JavaScript,HTML ,Css'} url ={'https://github.com/Belal-01/Amazon-app'}/>
-        <Project video = {'NoteApp2.mp4'} title={'Note App'} info={'Responseive website Worked using React ,Sass, with use of Database'} url={'https://github.com/Belal-01/Note-app'}/>
-        <Project video = {'facebook2.mp4'} title={'Facebook'} info={'Immitation of facebook worked using HTML , Sass '} url = {'https://github.com/Belal-01/facebook-web'}/>
-        <Project video = {'Tenzes2.mp4'} title={'Tenzes Game'} info={'Worked using React ,impementation of state managment'} url = {'https://github.com/Belal-01/Tenzies-Game'}/>
-        <Project video = {'portfolio2.mp4'} title={'Portfolio Design'} info={'worked using javaScript,HTML,Sass,'} url = {'https://github.com/Belal-01/portfolio'}/>
+        <Project img = {'GamesViewer'} title = {'Games Viewer'} info={'Responseive website Worked using React ,Sass, with use of Database (note:turn on vpn )'} url ={'https://games-viewer-reactapp.onrender.com'}/>
+        <Project img = {'Amazon'} title={'Amazon '} info={'Responseive website (Immitation of Amazon) Worked using JavaScript,HTML ,Css'} url ={'https://belal-01.github.io/Amazon-app/amazon.html'}/>
+        <Project img = {'NoteApp'} title={'Note App'} info={'Responseive website Worked using React ,Sass, with use of Database'} url={'https://note-app-react-app.onrender.com'}/>
+        <Project img = {'facebook'} title={'Facebook'} info={'Immitation of facebook worked using HTML , Sass '} url = {'https://belal-01.github.io/facebook-web/'}/>
+        <Project img = {'Tenzies'} title={'Tenzes Game'} info={'Worked using React ,impementation of state managment'} url = {'https://tenzies-react-app.onrender.com'}/>
+        <Project img = {'Portfolio'} title={'Portfolio Design'} info={'worked using javaScript,HTML,Sass,'} url = {'https://portfolio-grwg.onrender.com/'}/>
 
 
       </div>

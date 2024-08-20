@@ -17,7 +17,7 @@ const Project = (props) => {
  
   return (
     <div className='project'>
-      <img src="img/project-img-1.jpg" alt="" />
+      <img src={`img/${props.img}.png`} alt="product img" />
       <div className="project__review">
         <div className="project__review--header">
           <span>web</span>
@@ -34,7 +34,7 @@ const Project = (props) => {
         </div>
         <div className="project__review--viewer">
           <span className="">
-          View code on GitHub  
+          View Demo  
             <a className="project__review--viewer--link-icon" href={props.url} target='_blank'>
               <FaExternalLinkAlt />
             </a>

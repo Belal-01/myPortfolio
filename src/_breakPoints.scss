@@ -256,5 +256,8 @@ section{
   }
 }
 @media screen and (min-width:999px){
-
+  .project{
+    flex:1 1 30%;
+    min-width: rem(280);
+  }
 }

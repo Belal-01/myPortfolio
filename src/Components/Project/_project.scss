@@ -4,12 +4,10 @@
   position:relative;
   overflow:hidden;
   height: fit-content;
-  video{
-    width: 100%;
-  
-    border-radius: rem(5);
-   
-  }
+    img{
+      width:100%;
+      border-radius: rem(5);
+    }
   &__review{
     @include flex(column,center,center);
     background: linear-gradient(to top,$project-flow-color,transparent);
@@ -53,7 +51,7 @@
   }
 
   &:hover &__review{
-    bottom:6px;
+    bottom:-1px;
     opacity: 1;
   }
  

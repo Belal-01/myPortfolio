@@ -139,7 +139,7 @@ section {
   height: -moz-fit-content;
   height: fit-content;
 }
-.project video {
+.project img {
   width: 100%;
   border-radius: 0.3125rem;
 }
@@ -187,7 +187,7 @@ section {
   padding-left: 0.4375rem;
 }
 .project:hover .project__review {
-  bottom: 6px;
+  bottom: -1px;
   opacity: 1;
 }
 
@@ -1019,5 +1019,11 @@ section {
   }
   .project {
     flex: 1 1 40%;
+  }
+}
+@media screen and (min-width: 999px) {
+  .project {
+    flex: 1 1 30%;
+    min-width: 17.5rem;
   }
 }/*# sourceMappingURL=App.css.map */
