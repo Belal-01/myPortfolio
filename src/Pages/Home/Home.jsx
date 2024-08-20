@@ -22,7 +22,8 @@ const Home = () => {
         </div>
         <div className="home__aboutMe--discrebtion">
           <p>
-            Passionate Frontend React Developer based in Damascuse ,Syria 
+            Passionate Front-End Web Developer based in <br/> Damascuse ,Syria  &#x1F4CD;
+
           </p>
         </div>
         <div className="home__aboutMe--button">
@@ -33,7 +34,7 @@ const Home = () => {
         <div className="home__aboutMe--socialMedia">
           <a href="https://github.com/Belal-01?tab=repositories" target='_blank'><span className="socialMedia__icon"><FaGithub /></span></a>
           <a href=""><span className="socialMedia__icon"><FaDribbble /></span></a>
-          <a href=""><span className="socialMedia__icon"><PiLinkedinLogoBold /></span></a>
+          <a href="https://www.linkedin.com/in/belal-khobieh-427477324" target='_blank'><span className="socialMedia__icon"><PiLinkedinLogoBold /></span></a>
         </div>
       </div>
       <div className="home__img">

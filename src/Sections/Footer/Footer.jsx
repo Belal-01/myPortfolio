@@ -27,13 +27,13 @@ const Footer = () => {
         <span > Mustafa</span>
       </h4>
       <div className="footer__logo--subtitute">
-        <p>Fronend web developer</p>
+        <p>Front-End web developer</p>
       </div>
       </div>
       <div className="footer__contact">
       <a href="https://www.instagram.com/bilalmusstafa?igsh=azRnbmhkZmJnbjVx" target="_blank"><span className="contact__icon"><BsInstagram /></span></a>
       <a href="https://www.facebook.com/belal.khobieh?mibextid=JRoKGi" target="_blank"><span className="contact__icon"><FaFacebook /></span></a>
-      <a href=""><span className="contact__icon"><PiLinkedinLogoBold /></span></a>
+      <a href="https://www.linkedin.com/in/belal-khobieh-427477324" target="_blank"><span className="contact__icon"><PiLinkedinLogoBold /></span></a>
       </div>
       <div className="footer__copyRight">
         <small>

@@ -673,6 +673,9 @@ section {
     width: 80%;
     padding: 6.25rem 0;
   }
+  .navbar {
+    padding: 0 10%;
+  }
   .home {
     display: flex;
     flex-direction: row;
@@ -826,6 +829,9 @@ section {
   section {
     width: 80%;
     padding: 6.25rem 0;
+  }
+  .navbar {
+    padding: 0 10%;
   }
   .home {
     display: flex;
@@ -986,6 +992,9 @@ section {
 @media screen and (min-width: 750px) and (max-width: 999px) {
   section {
     width: 85%;
+  }
+  .navbar {
+    padding: 0 7%;
   }
   .home {
     display: flex;

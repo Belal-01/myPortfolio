@@ -1,8 +1,10 @@
 @media (max-width:430px){
 section{
   width:80%;
-  padding:rem(100) 0 ;
-  
+  padding:rem(100) 0 ;  
+}
+.navbar{
+padding:0 10%;
 }
 .home{
   @include flex(row,center,center,40);
@@ -109,6 +111,9 @@ section{
     padding:rem(100) 0 ;
     
   }
+  .navbar{
+    padding:0 10%;
+    }
   .home{
     @include flex(row,center,center,60);
     padding:rem(80) 0;
@@ -229,6 +234,9 @@ section{
   section{
     width:85%;
   }
+  .navbar{
+    padding:0 7%;
+    }
   .home{
     @include flex(row,space-between,center,30);
     &__blob{

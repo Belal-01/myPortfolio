@@ -17,17 +17,17 @@ const Services = () => {
           <Service
            logo = {'BsLayoutTextWindow'} 
           title ={ 'Frontend Developer'} 
-          describtion={' Development of custom web pages.Using current technologies and libraries of the labor field'}
+          describtion={'Building responsive websites Using  HTML ,CSS and JacaScript, Creating scalable and high-performance web applications using React'}
           key={1} />  
            <Service
           logo = {'RiPantoneLine' } 
-          title ={ 'UI/UX Designer'} 
-          describtion={' Development of custom web pages.Using current   technologies and libraries of the labor field'}
+          title ={ 'User Interface/UI'} 
+          describtion={ "Creating visually engaging layouts for websites and applications ,Designing buttons, icons, and other UI elements that enhance usability " }
             key={1} /> 
          <Service
           logo = {'FaPenNib'} 
-          title ={ 'Graphic Design'} 
-          describtion={' Development of custom web pages.Using current technologies and libraries of the labor field'}
+          title ={ 'User Experience /UX'} 
+          describtion={'Conducting usability testing to improve user experience , Analyzing user feedback and behavior to refine designs'}
           key={1}
           />
           
