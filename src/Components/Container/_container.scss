@@ -1,0 +1,6 @@
+.app-container{  
+  @include flex(column,center,center);
+
+ // flex-shrink: 0;
+ // position: relative;
+}
