@@ -26,7 +26,7 @@ const Home = () => {
           </p>
         </div>
         <div className="home__aboutMe--button">
-          <a href="../../../public/documents/CV.pdf" download={true}>
+          <a href="documents/CV.pdf" download={true}>
           <PrimaryButton >Download CV</PrimaryButton>
           </a>
         </div>

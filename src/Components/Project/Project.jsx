@@ -17,7 +17,7 @@ const Project = (props) => {
  
   return (
     <div className='project'>
-      <img src="../../../public/img/project-img-1.jpg" alt="" />
+      <img src="img/project-img-1.jpg" alt="" />
       <div className="project__review">
         <div className="project__review--header">
           <span>web</span>
