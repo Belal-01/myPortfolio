@@ -1,5 +1,4 @@
 
-import { BrowserRouter } from 'react-router-dom'
 import './App.css'
 import Header from './Sections/Header/Header'
 import Home from './Pages/Home/Home'
@@ -16,7 +15,7 @@ function App() {
 
   return (
     <>
-    <BrowserRouter>
+  
 
 
      
@@ -40,7 +39,7 @@ function App() {
     <Footer />
 
 
-    </BrowserRouter>
+    
 
     </>
   )
