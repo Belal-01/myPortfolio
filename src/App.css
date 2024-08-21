@@ -714,6 +714,7 @@ section {
     -moz-column-gap: 2.5rem;
          column-gap: 2.5rem;
     row-gap: 2.5rem;
+    flex-direction: column-reverse;
     flex-wrap: wrap;
   }
   .About__img {
@@ -848,7 +849,7 @@ section {
     flex: 1 1 80%;
   }
   .home__blob {
-    min-width: 17.5rem;
+    min-width: 23.75rem;
   }
   .home__aboutMe {
     flex: 1 1 80%;
@@ -875,12 +876,13 @@ section {
          column-gap: 3.75rem;
     row-gap: 3.75rem;
     flex-wrap: wrap;
+    flex-direction: column-reverse;
   }
   .About__img {
     flex: 1 1 80%;
   }
   .About__blob {
-    min-width: 17.5rem;
+    min-width: 23.75rem;
   }
   .About__data {
     flex: 1 1 80%;

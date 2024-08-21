@@ -12,7 +12,6 @@ padding:0 10%;
   flex-wrap: wrap;
   &__img{
     flex:1 1 80%;
-
   }
   &__blob{
     min-width: rem(280) ;
@@ -29,6 +28,7 @@ padding:0 10%;
 }
 .About{
   @include flex(row,center,center,40);
+  flex-direction: column-reverse;
   flex-wrap: wrap;
   &__img{
     flex:1 1 80%
@@ -122,7 +122,7 @@ padding:0 10%;
       flex:1 1 80%;
     }
     &__blob{
-      min-width: rem(280) ;
+      min-width: rem(380) ;
     }
     &__aboutMe{
       flex:1 1 80%;
@@ -140,11 +140,12 @@ padding:0 10%;
   .About{
     @include flex(row,center,center,60);
     flex-wrap: wrap;
+    flex-direction: column-reverse;
     &__img{
       flex:1 1 80%
     }
     &__blob{
-      min-width: rem(280);
+      min-width:rem(380);
     }
     &__data{
       flex:1 1 80%;
