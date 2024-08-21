@@ -423,7 +423,7 @@ section {
   text-align: center;
 }
 .home__blob {
-  width: 80%;
+  max-width: 80%;
   min-width: 23.75rem;
   fill: hsl(162, 100%, 40%);
   filter: drop-shadow(0 12px 12px hsla(162, 100%, 40%, 0.2));
