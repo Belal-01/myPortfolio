@@ -7,24 +7,30 @@ import Projects from './Pages/Projects/Projects'
 import Contacts from './Pages/Contacts/Contacts'
 import About from './Pages/About/About'
 import Footer from './Sections/Footer/Footer'
+import ScrollReveal from 'scrollreveal'
 
 
 
 function App() {
+
+  const sr = ScrollReveal({
+    origin:'top',
+    distance:'60px',
+    duration:2500,
+    delay:400
+    // reset :true   // animations  repeat 
+  })
  
 
   return (
     <>
-  
-
-
-     
-      <Header/>       
-      <Home />
-      <About />
-      <Services/>
-      <Projects/>
-      <Contacts />
+       
+      <Header anim ={sr}/>       
+      <Home anim={sr}/>
+      <About anim ={sr}/>
+      <Services anim ={sr}/>
+      <Projects anim ={sr}/>
+      <Contacts anim ={sr}/>
    
 
         {/* <Routes>
@@ -36,7 +42,7 @@ function App() {
         </Routes>  */}  
 
    
-    <Footer />
+    <Footer anim ={sr}/>
 
 
     

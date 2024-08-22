@@ -5,7 +5,7 @@ import NavItem from '../../Components/NavItem/NavItem';
 
 
 
-const Header = () => {
+const Header = (props) => {
  const [activSidBar,setActivSideBar] = React.useState(false);
  const [navClass,setNavClass] = React.useState('navbar');
  const [menuActiveColor,setMenuActiveColor] = React.useState(JSON.parse(localStorage.getItem('colors'))||{Home:true,
@@ -52,12 +52,14 @@ const handleActiveNavItemColor = useCallback((item)=>{
   Contact:false
   }));
 
-  if(item==='Home')   
+  if(item==='Home') {
+    // props.animHome.reveal('.home__aboutMe')
+    // props.animHome.reveal('.home__img',{origin:'bottom'})
     setMenuActiveColor(prevState=>({...prevState,Home:true}));
-  else if(item==='About')
+  }else if(item==='About')
     setMenuActiveColor(prevState=>({...prevState,About:true}));
   else if(item === 'Services')
-    setMenuActiveColor(prevState=>({...prevState,Services:true}))
+    setMenuActiveColor(prevState=>({...prevState,Services:true}));
   else if(item === 'Projects')
     setMenuActiveColor(prevState=>({...prevState,Projects:true}));
   else

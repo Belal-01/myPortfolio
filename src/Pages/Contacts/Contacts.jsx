@@ -1,17 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import PrimaryButton from '../../Components/PrimaryButton/Button';
 import emailjs from '@emailjs/browser';
 import Container from '../../Components/Container/Container';
 
 
-const Contacts = () => {
+const Contacts = (props) => {
   const contactForm = React.useRef(); 
   const messageState = React.useRef(); 
   const formName =  React.useRef();
    const formEmail = React.useRef();
    const formMessage = React.useRef(); 
-    const sendEmail = (e)=>{
-       
+
+   useEffect(()=>{
+    props.anim.reveal('.contact')
+   },[])
+
+    const sendEmail = (e)=>{    
       e.preventDefault();
       emailjs
       .sendForm('service_cv9gu5e', 'template_38n43y6', contactForm.current, {

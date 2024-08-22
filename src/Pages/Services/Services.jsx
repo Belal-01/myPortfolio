@@ -2,7 +2,7 @@
 import Service from '../../Components/service/Service'
 import Container from '../../Components/Container/Container'
 
-const Services = () => {
+const Services = ({anim}) => {
   return (
     <Container black={false}>
       <section className='services section' id='Services'>
@@ -14,17 +14,17 @@ const Services = () => {
         <span className='title'>What I Do</span>
       </div>
       <div className="services__gallery">
-          <Service
+          <Service anim={anim}
            logo = {'BsLayoutTextWindow'} 
           title ={ 'Frontend Developer'} 
           describtion={'Building responsive websites Using  HTML ,CSS and JacaScript, Creating scalable and high-performance web applications using React'}
           key={1} />  
-           <Service
+           <Service anim={anim}
           logo = {'RiPantoneLine' } 
           title ={ 'User Interface/UI'} 
           describtion={ "Creating visually engaging layouts for websites and applications ,Designing buttons, icons, and other UI elements that enhance usability " }
             key={1} /> 
-         <Service
+         <Service anim={anim}
           logo = {'FaPenNib'} 
           title ={ 'User Experience /UX'} 
           describtion={'Conducting usability testing to improve user experience , Analyzing user feedback and behavior to refine designs'}

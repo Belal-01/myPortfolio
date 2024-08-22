@@ -4,8 +4,16 @@ import { FaGithub } from "react-icons/fa";
 import { PiLinkedinLogoBold } from "react-icons/pi";
 import { FaDribbble } from "react-icons/fa";
 import Container from '../../Components/Container/Container';
+import { useEffect } from 'react';
 
-const Home = () => {
+const Home = (props) => {
+
+  //=================    animation  ==================== 
+
+  useEffect(()=>{
+    props.anim.reveal('.home__aboutMe')
+    props.anim.reveal('.home__img',{origin:'bottom'})
+  },[])
   return (
     <Container black ={true}>
        <section className='home section' id='Home'>

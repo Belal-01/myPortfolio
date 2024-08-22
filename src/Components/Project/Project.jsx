@@ -10,8 +10,8 @@ const Project = (props) => {
       video.currentTime = 0;
       video.play();
   })
-  
-   })
+   });
+   props.anim.reveal('.project',{interval:100})
   },[])
  
  

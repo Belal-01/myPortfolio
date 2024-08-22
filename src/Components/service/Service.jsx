@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { BsLayoutTextWindow } from "react-icons/bs";
 import { FaPenNib } from "react-icons/fa";
 import { RiPantoneLine } from "react-icons/ri";
 
 
 const Service = (props) => {
+
+  useEffect(()=>{
+    props.anim.reveal('.service',{interval:100})
+  },[])
 
     
   return (

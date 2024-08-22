@@ -1,8 +1,14 @@
 
 import PrimaryButton from '../../Components/PrimaryButton/Button'
 import Container from '../../Components/Container/Container';
+import { useEffect } from 'react';
 
-const About = () => {
+const About = (props) => {
+
+  useEffect(()=>{
+    props.anim.reveal('.About__data ,.skills__describtion',{origin:'left'})
+    props.anim.reveal('.About__img ,.skills__gall',{origin:'right'})
+  },[])
 
   
   return (

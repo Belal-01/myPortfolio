@@ -5,7 +5,7 @@ import { FaArrowUp } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
 
-const Footer = () => {
+const Footer = (props) => {
   const [scrollUpClass ,setScrollUpClass] = useState('scroll-up');
   
   const scrollUp = ()=>{
@@ -17,9 +17,10 @@ const Footer = () => {
 
   useEffect(()=>{
    window.addEventListener('scroll',scrollUp)
+   props.anim.reveal('.footer')
   },[])
   return (
-    <>
+    <div className="footer--container">
     <div className="footer">
       <div className="footer__logo">
       <h4 className="footer__logo--name">
@@ -50,7 +51,7 @@ const Footer = () => {
       <FaArrowUp />
     </span>
   </a>
-  </>
+  </div>
 
   )
 }

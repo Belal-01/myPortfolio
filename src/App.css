@@ -316,9 +316,11 @@ section {
   -moz-column-gap: 2.5rem;
        column-gap: 2.5rem;
   row-gap: 2.5rem;
-  background-color: hsl(228, 15%, 15%);
   padding: 1.875rem 12%;
   z-index: 0;
+}
+.footer--container {
+  background-color: hsl(228, 15%, 15%);
 }
 .footer__logo {
   flex: 1 1 35%;
