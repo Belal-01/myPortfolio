@@ -308,7 +308,12 @@ padding:0 10%;
    // min-width: rem(280);
     
   }
+  .skills{
+    column-gap:rem(20);
+  
+  }
 }
+
 
 @media screen and (min-width:1150px){
   .projects{

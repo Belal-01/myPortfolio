@@ -1075,6 +1075,10 @@ section {
     row-gap: 1.5625rem;
     justify-items: center;
   }
+  .skills {
+    -moz-column-gap: 1.25rem;
+         column-gap: 1.25rem;
+  }
 }
 @media screen and (min-width: 1150px) {
   .projects__gallery {
