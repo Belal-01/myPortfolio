@@ -260,7 +260,14 @@ padding:0 10%;
     }
   }
   .skills{
-    column-gap: rem(0);
+    column-gap: rem(0); 
+    &__describtion{
+      &--info{
+        p{
+          padding-right:8%;
+        }
+      }
+    } 
     &__gallery{
       column-gap: rem(15);
       &--skill{
@@ -309,8 +316,14 @@ padding:0 10%;
     
   }
   .skills{
-    column-gap:rem(20);
-  
+    column-gap: rem(0); 
+    &__describtion{
+      &--info{
+        p{
+          padding-right:8%;
+        }
+      }
+    } 
   }
 }
 

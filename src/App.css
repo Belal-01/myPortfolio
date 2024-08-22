@@ -1048,6 +1048,9 @@ section {
     -moz-column-gap: 0rem;
          column-gap: 0rem;
   }
+  .skills__describtion--info p {
+    padding-right: 8%;
+  }
   .skills__gallery {
     -moz-column-gap: 0.9375rem;
          column-gap: 0.9375rem;
@@ -1076,8 +1079,11 @@ section {
     justify-items: center;
   }
   .skills {
-    -moz-column-gap: 1.25rem;
-         column-gap: 1.25rem;
+    -moz-column-gap: 0rem;
+         column-gap: 0rem;
+  }
+  .skills__describtion--info p {
+    padding-right: 8%;
   }
 }
 @media screen and (min-width: 1150px) {
