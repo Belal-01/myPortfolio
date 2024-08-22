@@ -36,7 +36,6 @@ const Header = (props) => {
 /// ===========    for sidebar   =====================
 
  const handletogglebutton = ()=>{
-
   setActivSideBar(prevState =>!prevState);
  }
  
@@ -53,8 +52,6 @@ const handleActiveNavItemColor = useCallback((item)=>{
   }));
 
   if(item==='Home') {
-    // props.animHome.reveal('.home__aboutMe')
-    // props.animHome.reveal('.home__img',{origin:'bottom'})
     setMenuActiveColor(prevState=>({...prevState,Home:true}));
   }else if(item==='About')
     setMenuActiveColor(prevState=>({...prevState,About:true}));
@@ -100,27 +97,31 @@ const activeNavLink = (sections)=>{
           </li>
           
           <li>
-            <NavItem href='#Home' active={menuActiveColor.Home} handleActiveColor={handleActiveNavItemColor}>
+            <NavItem href='#Home' active={menuActiveColor.Home} handleActiveColor={handleActiveNavItemColor} handleSideBar = {()=>setActivSideBar(false)}>
              Home
             </NavItem>
           </li>
           <li>
-           <NavItem href='#About' active={menuActiveColor.About} handleActiveColor={handleActiveNavItemColor}>
+           <NavItem href='#About' active={menuActiveColor.About} handleActiveColor={handleActiveNavItemColor}
+           handleSideBar = {()=>setActivSideBar(false)}>
              About
             </NavItem>
           </li>
           <li>
-           <NavItem href='#Services' active={menuActiveColor.Services} handleActiveColor={handleActiveNavItemColor}>
+           <NavItem href='#Services' active={menuActiveColor.Services} handleActiveColor={handleActiveNavItemColor}
+           handleSideBar = {()=>setActivSideBar(false)}>
              Services
             </NavItem>
           </li>
           <li>
-           <NavItem href='#Projects' active={menuActiveColor.Projects} handleActiveColor={handleActiveNavItemColor}>
+           <NavItem href='#Projects' active={menuActiveColor.Projects} handleActiveColor={handleActiveNavItemColor}
+           handleSideBar = {()=>setActivSideBar(false)}>
              Projects
             </NavItem>          
           </li>
           <li>
-            <NavItem href='#Contact' active={menuActiveColor.Contact} handleActiveColor={handleActiveNavItemColor}>
+            <NavItem href='#Contact' active={menuActiveColor.Contact} handleActiveColor={handleActiveNavItemColor}
+            handleSideBar = {()=>setActivSideBar(false)}>
              Contact
             </NavItem>
           </li>

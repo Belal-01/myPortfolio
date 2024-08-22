@@ -789,6 +789,12 @@ section {
   .contact__form {
     min-width: 100%;
   }
+  .contact__form--email {
+    flex-wrap: wrap;
+  }
+  .contact__form--email input {
+    flex: 1 1 80%;
+  }
   .footer {
     display: flex;
     flex-direction: row;

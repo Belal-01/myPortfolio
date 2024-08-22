@@ -82,6 +82,12 @@ padding:0 10%;
 .contact{
   &__form{
     min-width:100%;
+    &--email{
+      flex-wrap: wrap;
+      input {
+        flex:1 1 80%;
+      }
+    }
   }
 }
 .footer{
