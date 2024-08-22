@@ -2,6 +2,7 @@
 import PrimaryButton from '../../Components/PrimaryButton/Button'
 import Container from '../../Components/Container/Container';
 import { useEffect } from 'react';
+import Progress from '../../Components/Progrees/Progress';
 
 const About = (props) => {
 
@@ -101,32 +102,50 @@ const About = (props) => {
       <div className="skills__gall flex">
       <div className="skills__gallery">
       <span className="skills__gallery--skill">
-        <span className="second-sub-title">01. </span>
-        <span className="second-title">HTML & CSS</span>
+        <span className="skills__gallery--skill--count">01. </span>
+        <span className="skills__gallery--skill--name">HTML</span>
+        <span className="skills__gallery--skill--progress">
+          <Progress filled={96}/>
+        </span>
       </span>
       <span className="skills__gallery--skill">
-        <span className="second-sub-title">02. </span>
-        <span className="second-title">JavaScript</span>
+        <span className="skills__gallery--skill--count">02. </span>
+        <span className="skills__gallery--skill--name">CSS</span>
+        <span className="skills__gallery--skill--progress"><Progress filled={96}/>
+        </span>      </span>
+      <span className="skills__gallery--skill">
+        <span className="skills__gallery--skill--count">03. </span>
+        <span className="skills__gallery--skill--name">JavaScript</span>
+        <span className="skills__gallery--skill--progress"><Progress filled={95}/>
+        </span>      </span>
+      <span className="skills__gallery--skill">
+        <span className="skills__gallery--skill--count">04. </span>
+        <span className="skills__gallery--skill--name">Bootstrap</span>
+        <span className="skills__gallery--skill--progress"><Progress filled={85}/>
+</span>
       </span>
       <span className="skills__gallery--skill">
-        <span className="second-sub-title">03. </span>
-        <span className="second-title">Bootstrap</span>
+        <span className="skills__gallery--skill--count">05. </span>
+        <span className="skills__gallery--skill--name">SCSS</span>
+        <span className="skills__gallery--skill--progress"><Progress filled={90}/>
+        </span>
       </span>
       <span className="skills__gallery--skill">
-        <span className="second-sub-title">04. </span>
-        <span className="second-title">SCSS</span>
+        <span className="skills__gallery--skill--count">06. </span>
+        <span className="skills__gallery--skill--name">React</span>
+        <span className="skills__gallery--skill--progress"><Progress filled={95}/>
+        </span>
       </span>
       <span className="skills__gallery--skill">
-        <span className="second-sub-title">05. </span>
-        <span className="second-title">React</span>
-      </span>
+        <span className="skills__gallery--skill--count">07. </span>
+        <span className="skills__gallery--skill--name">Figma</span>
+        <span className="skills__gallery--skill--progress"><Progress filled={75}/>
+        </span>      </span>
       <span className="skills__gallery--skill">
-        <span className="second-sub-title">06. </span>
-        <span className="second-title">Figma</span>
-      </span>
-      <span className="skills__gallery--skill">
-        <span className="second-sub-title">07. </span>       
-        <span className="second-title">Git&GitHub</span>
+        <span className="skills__gallery--skill--count">08. </span>       
+        <span className="skills__gallery--skill--name">Git&GitHub</span>
+        <span className="skills__gallery--skill--progress"><Progress filled={80}/>
+        </span>
       </span>
       </div>
       </div>

@@ -1,0 +1,15 @@
+.progress{
+  &-bar{
+    width:100%;
+    height:rem(12);
+    display: inline-block;
+    border-radius: rem(8);
+    background-color: $body-color;
+  };
+  &-fill{
+    background-color:$first-color;
+    text-align: center;  
+    font-size: rem(10);
+  }
+ 
+}
