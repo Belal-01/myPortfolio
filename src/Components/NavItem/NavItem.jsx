@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import  { memo } from 'react'
 
 const NavItem = ({children,href,active,handleActiveColor,handleSideBar}) => {
 const classe = active?'active':'';
@@ -7,7 +7,6 @@ const classe = active?'active':'';
     <a href={href} className={classe} onClick={()=>{
       handleActiveColor(children)
       handleSideBar()
-
     }}>
       {children}
     </a>

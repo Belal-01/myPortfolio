@@ -1,16 +1,8 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Project = (props) => {
   useEffect(()=>{
-  const projectVideo = document.querySelectorAll('.project-video');
-  console.log(projectVideo)
-  projectVideo.forEach((video)=>{
-    video.addEventListener('ended',()=>{
-      video.currentTime = 0;
-      video.play();
-  })
-   });
    props.anim.reveal('.project',{interval:100})
   },[])
  

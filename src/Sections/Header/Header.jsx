@@ -1,14 +1,15 @@
-import React, { useCallback } from 'react'
+import React, { useCallback, useEffect} from 'react'
 import { IoIosMenu } from "react-icons/io";
 import { IoCloseOutline } from "react-icons/io5";
 import NavItem from '../../Components/NavItem/NavItem';
 
 
 
-const Header = (props) => {
+const Header = () => {
  const [activSidBar,setActivSideBar] = React.useState(false);
  const [navClass,setNavClass] = React.useState('navbar');
- const [menuActiveColor,setMenuActiveColor] = React.useState(JSON.parse(localStorage.getItem('colors'))||{Home:true,
+ const [menuActiveColor,setMenuActiveColor] = React.useState(()=>JSON.parse(localStorage.getItem('colors'))||{
+  Home:true,
   About:false,
   Services:false,
   Projects:false,
@@ -21,13 +22,28 @@ const Header = (props) => {
       blurHeader();
       activeNavLink(sections);
     })
-   },[])
+
+      //============    adding event listener for the document     ================  
+    document.addEventListener('click',(event)=>{
+      const sideMenu = document.querySelector('.nav-menu');
+      const toggleButton = document.querySelector('.toggle-button');
+            console.log(sideMenu)
+            if(!toggleButton.contains(event.target)&&!sideMenu.contains(event.target)){
+               closeSideBar();
+            }            
+    })
+      
+    },[])
+    
+
+  
+  
 
    React.useEffect(()=>{
     localStorage.setItem('colors',JSON.stringify(menuActiveColor));
   },[menuActiveColor])
 
- function blurHeader(){
+ const blurHeader =()=>{
  const naCla = window.scrollY>=50?'navbar blur-navbar':'navbar';
  setNavClass(naCla);
  }
@@ -38,18 +54,22 @@ const Header = (props) => {
  const handletogglebutton = ()=>{
   setActivSideBar(prevState =>!prevState);
  }
+
+ const closeSideBar = useCallback(()=>{
+  setActivSideBar(false);
+ },[])
  
    const classes = activSidBar?'nav-menu nav-menu__active':'nav-menu';
 //=============   handle avtive nav item color  ========= 
 
 const handleActiveNavItemColor = useCallback((item)=>{
- setMenuActiveColor(prevState=>
- ({Home:false,
+ setMenuActiveColor(
+ {Home:false,
   About:false,
   Services:false,
   Projects:false,
   Contact:false
-  }));
+  });
 
   if(item==='Home') {
     setMenuActiveColor(prevState=>({...prevState,Home:true}));
@@ -65,7 +85,7 @@ const handleActiveNavItemColor = useCallback((item)=>{
 
 // =========  ===========    handle action active link  ====================
 
-const activeNavLink = (sections)=>{
+const activeNavLink = useCallback((sections)=>{
   sections.forEach((current)=>{
     const sectionTop = current.offsetTop-80;
     const sectionHeight = current.offsetHeight
@@ -74,7 +94,7 @@ const activeNavLink = (sections)=>{
       handleActiveNavItemColor(sectionId);
     }
   })
-}
+},[])
 
 
 
@@ -97,40 +117,37 @@ const activeNavLink = (sections)=>{
           </li>
           
           <li>
-            <NavItem href='#Home' active={menuActiveColor.Home} handleActiveColor={handleActiveNavItemColor} handleSideBar = {()=>setActivSideBar(false)}>
+            <NavItem href='#Home' active={menuActiveColor.Home} handleActiveColor={handleActiveNavItemColor} 
+            handleSideBar = {closeSideBar}>
              Home
             </NavItem>
           </li>
           <li>
            <NavItem href='#About' active={menuActiveColor.About} handleActiveColor={handleActiveNavItemColor}
-           handleSideBar = {()=>setActivSideBar(false)}>
+           handleSideBar = {closeSideBar}>
              About
             </NavItem>
           </li>
           <li>
            <NavItem href='#Services' active={menuActiveColor.Services} handleActiveColor={handleActiveNavItemColor}
-           handleSideBar = {()=>setActivSideBar(false)}>
+           handleSideBar = {closeSideBar}>
              Services
             </NavItem>
           </li>
           <li>
            <NavItem href='#Projects' active={menuActiveColor.Projects} handleActiveColor={handleActiveNavItemColor}
-           handleSideBar = {()=>setActivSideBar(false)}>
+           handleSideBar = {closeSideBar}>
              Projects
             </NavItem>          
           </li>
           <li>
             <NavItem href='#Contact' active={menuActiveColor.Contact} handleActiveColor={handleActiveNavItemColor}
-            handleSideBar = {()=>setActivSideBar(false)}>
+            handleSideBar={closeSideBar}>
              Contact
             </NavItem>
           </li>
         </ul>
       </nav>
-    
-
-    
-      {/* <Sidebar sideBar = {activSidBar} handlSideBar = {handletogglebutton}/> */}
 
     </div>
   )
