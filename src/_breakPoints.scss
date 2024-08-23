@@ -19,10 +19,19 @@ padding:0 10%;
   &__aboutMe{
     flex:1 1 80%;
     text-align: center;
+    &--button{
+      @include flex(row,center,center,10);
+    }
     &--socialMedia{
     @include flex(row,center,center,20);
 
     }
+    &--location{
+      iframe{
+      //padding:0 5%;
+      }
+    }
+
 
   }
 }
@@ -140,10 +149,19 @@ padding:0 10%;
       &--discrebtion{
         padding:0 10%;
       }
+      &--button{
+        @include flex(row,center,center,20);
+      }
+      &--location{
+        iframe{
+        padding:0 10%;
+        }
+      }
       &--socialMedia{
       @include flex(row,center,center,20);
         
       }
+
   
     }
   }

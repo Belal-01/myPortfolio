@@ -27,8 +27,31 @@
       max-width:rem(450);
     }
   }
+  &--location{
+    width:100%;
+    height: 0;
+   // height:rem(300);
+    position: relative;
+    padding:0 rem(10%);
+    transform: scaleY(0);
+    transition:height .4s,transform .4s;
+    &--active{
+      height:rem(200);
+      transform: scaleY(1);
+    }
+    iframe{
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      border-radius: rem(10);
+      filter:invert(100%);
+    }
+  }
   &--button{
-    margin-top:rem(30);
+    margin:rem(30) 0;
+    @include flex(row,start,center,20);
   }
   &--socialMedia{
     @include flex(row,start,center,20);
