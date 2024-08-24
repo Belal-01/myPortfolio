@@ -99,6 +99,7 @@ padding:0 10%;
   }
 }
 .contact__information{
+  padding-top:rem(0);
   &--info{
     flex-wrap:wrap;
     &--data{
@@ -245,6 +246,8 @@ padding:0 10%;
     }
   }
   .contact__information{
+  padding-top:rem(0);
+
     &--info{
       @include flex(row,center,center,30);
       flex-wrap:wrap;
