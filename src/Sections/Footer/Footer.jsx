@@ -27,7 +27,7 @@ const Footer = (props) => {
       <h4 className="footer__logo--name">
       <span className="logoLapIcon">
           <FaLaptopCode/> 
-      </span> Belal 
+      </span>Belal 
         <span > Mustafa</span>
       </h4>
       <div className="footer__logo--subtitute">
