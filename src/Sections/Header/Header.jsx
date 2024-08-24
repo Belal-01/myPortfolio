@@ -2,6 +2,7 @@ import React, { useCallback, useEffect} from 'react'
 import { IoIosMenu } from "react-icons/io";
 import { IoCloseOutline } from "react-icons/io5";
 import NavItem from '../../Components/NavItem/NavItem';
+import { FaLaptopCode } from "react-icons/fa";
 
 
 
@@ -102,6 +103,9 @@ const activeNavLink = useCallback((sections)=>{
     <div className={navClass}>
       <div className="navbar-logo">
         <h4>
+          <span className="logoLapIcon">
+          <FaLaptopCode/> 
+          </span>
           Belal 
           <span> Mustafa</span>
         </h4>

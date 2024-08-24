@@ -3,6 +3,7 @@ import { PiLinkedinLogoBold } from "react-icons/pi";
 import { FaFacebook } from "react-icons/fa";
 import { FaArrowUp } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import { FaLaptopCode } from "react-icons/fa";
 
 
 const Footer = (props) => {
@@ -24,7 +25,9 @@ const Footer = (props) => {
     <div className="footer">
       <div className="footer__logo">
       <h4 className="footer__logo--name">
-        Belal 
+      <span className="logoLapIcon">
+          <FaLaptopCode/> 
+      </span> Belal 
         <span > Mustafa</span>
       </h4>
       <div className="footer__logo--subtitute">

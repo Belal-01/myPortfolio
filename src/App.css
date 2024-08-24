@@ -255,6 +255,11 @@ section {
   color: hsl(162, 100%, 40%);
 }
 
+.logoLapIcon {
+  font-size: 2rem;
+  padding-right: 0.25rem;
+}
+
 .nav-menu ul li a {
   color: hsl(228, 8%, 95%);
   font-weight: 500;
