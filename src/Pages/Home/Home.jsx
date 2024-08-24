@@ -2,16 +2,12 @@
 import PrimaryButton from '../../Components/PrimaryButton/Button'
 import { FaGithub } from "react-icons/fa";
 import { PiLinkedinLogoBold } from "react-icons/pi";
-import { FaDribbble } from "react-icons/fa";
+import { FaTelegramPlane } from "react-icons/fa";
 import Container from '../../Components/Container/Container';
 import { useEffect } from 'react';
 import { FaArrowRight } from "react-icons/fa";
 
 const Home = (props) => {
-  // const [viewLocation ,setViewLocation] = useState(false);
-  
-  //   let location = viewLocation?"home__aboutMe--location home__aboutMe--location--active":"home__aboutMe--location";
-  //   let locationButton = viewLocation?"Hide Location":"View Location";
   
 
   //=================    animation  ==================== 
@@ -42,18 +38,12 @@ const Home = (props) => {
         <div className="home__aboutMe--button">
         <a href="#Contact">
         <PrimaryButton >Contact Me <span > <FaArrowRight/></span></PrimaryButton>
-        </a>      
-          {/* <a href="#" onClick={()=>setViewLocation(prevLocation =>!prevLocation)}>
-          <PrimaryButton >{locationButton}</PrimaryButton>
-          </a> */}
-        </div>
-        {/* <div className={location}>  
-                
-        </div> */}
+        </a> 
+        </div>     
         <div className="home__aboutMe--socialMedia">
           <a href="https://github.com/Belal-01?tab=repositories" target='_blank'><span className="socialMedia__icon"><FaGithub /></span></a>
-          <a href=""><span className="socialMedia__icon"><FaDribbble /></span></a>
           <a href="https://www.linkedin.com/in/belal-khobieh-427477324" target='_blank'><span className="socialMedia__icon"><PiLinkedinLogoBold /></span></a>
+          <a href="http://t.me/Belal_343" target='_blank'><span className="socialMedia__icon"><FaTelegramPlane/></span></a>
         </div>
       </div>
       <div className="home__img">
@@ -91,7 +81,7 @@ const Home = (props) => {
         </defs>
         </svg>
       </div>
-    </section>
+       </section>
     </Container>
    
   )
