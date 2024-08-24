@@ -481,13 +481,6 @@ section {
 }
 .home__aboutMe--button {
   margin: 1.875rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
-  -moz-column-gap: 1.25rem;
-       column-gap: 1.25rem;
-  row-gap: 1.25rem;
 }
 .home__aboutMe--socialMedia {
   display: flex;
