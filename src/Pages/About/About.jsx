@@ -122,24 +122,25 @@ const About = (props) => {
         <span className="skills__gallery--skill--name">JavaScript</span>
         <span className="skills__gallery--skill--progress"><Progress filled={95}/>
         </span>      </span>
-      <span className="skills__gallery--skill">
+        <span className="skills__gallery--skill">
         <span className="skills__gallery--skill--count">04. </span>
+        <span className="skills__gallery--skill--name">React</span>
+        <span className="skills__gallery--skill--progress"><Progress filled={95}/>
+        </span>
+      </span>
+      <span className="skills__gallery--skill">
+        <span className="skills__gallery--skill--count">05. </span>
         <span className="skills__gallery--skill--name">Bootstrap</span>
         <span className="skills__gallery--skill--progress"><Progress filled={85}/>
 </span>
       </span>
       <span className="skills__gallery--skill">
-        <span className="skills__gallery--skill--count">05. </span>
+        <span className="skills__gallery--skill--count">06. </span>
         <span className="skills__gallery--skill--name">SCSS</span>
         <span className="skills__gallery--skill--progress"><Progress filled={90}/>
         </span>
       </span>
-      <span className="skills__gallery--skill">
-        <span className="skills__gallery--skill--count">06. </span>
-        <span className="skills__gallery--skill--name">React</span>
-        <span className="skills__gallery--skill--progress"><Progress filled={95}/>
-        </span>
-      </span>
+ 
       <span className="skills__gallery--skill">
         <span className="skills__gallery--skill--count">07. </span>
         <span className="skills__gallery--skill--name">Figma</span>
