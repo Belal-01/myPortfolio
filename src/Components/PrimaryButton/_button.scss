@@ -6,7 +6,11 @@
   color:$title-color;
   font-weight: $font-regular;
   transition:box-shadow .4s;
+  transition:background-color .4s ease ,color .4s;
 }
 .primary-button:hover{
+  color:$first-color;
+  background-color:$body-color ;
+  outline:rem(2) solid $first-color ;
   box-shadow: 0px 5px 10px $buttons-shadow-color;
 }

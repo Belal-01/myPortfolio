@@ -91,9 +91,13 @@ section {
   color: hsl(228, 8%, 95%);
   font-weight: 400;
   transition: box-shadow 0.4s;
+  transition: background-color 0.4s ease, color 0.4s;
 }
 
 .primary-button:hover {
+  color: hsl(162, 100%, 40%);
+  background-color: hsl(228, 15%, 20%);
+  outline: 0.125rem solid hsl(162, 100%, 40%);
   box-shadow: 0px 5px 10px hsla(162, 100%, 40%, 0.2);
 }
 
