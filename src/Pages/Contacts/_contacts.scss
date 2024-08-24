@@ -14,6 +14,7 @@
   @include flex(column,top,center,20);
     &--email{
       @include flex(row,space-between,center,20);
+      flex-wrap:wrap;
       width: 100%;      
       input{
         flex:1 1 40%;
@@ -31,6 +32,9 @@
         &:focus{
           outline:rem(2) outset $first-color;
          
+        }
+        &:nth-of-type(3) {
+          flex:1 1 80%;
         }
       }
       
@@ -59,5 +63,39 @@
      
     }
 
+  }
+}
+.contact__information{
+  padding:rem(60) 0;
+  &--header{
+    text-align: center;
+    padding-bottom:rem(50);
+  }
+  &--info{
+    @include flex(row, space-between,top,40);
+    &--data{
+      &-header{
+        padding-bottom:rem(20);
+      }
+      flex:1 1 50%;
+    }
+    &--location{
+      flex:1 1 40%;
+      //max-width: 80%;
+      height:rem(300);
+      position: relative;
+      padding-left:rem(5%);
+      iframe{
+
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        border-radius: rem(10);
+        filter:invert(100%);
+      }
+      
+    }
   }
 }

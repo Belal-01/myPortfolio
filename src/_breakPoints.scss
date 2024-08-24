@@ -19,18 +19,13 @@ padding:0 10%;
   &__aboutMe{
     flex:1 1 80%;
     text-align: center;
-    &--button{
-      @include flex(row,center,center,10);
-    }
+   
     &--socialMedia{
     @include flex(row,center,center,20);
 
     }
-    &--location{
-      iframe{
-      //padding:0 5%;
-      }
-    }
+    
+  
 
 
   }
@@ -103,6 +98,17 @@ padding:0 10%;
     }
   }
 }
+.contact__information{
+  &--info{
+    flex-wrap:wrap;
+    &--data{
+      flex:1 1 80%;
+    }
+    &--location{
+      flex:1 1 80%;
+    }
+  }
+}
 .footer{
   @include flex(row,center,center,20);
   flex-wrap:wrap;
@@ -149,14 +155,7 @@ padding:0 10%;
       &--discrebtion{
         padding:0 10%;
       }
-      &--button{
-        @include flex(row,center,center,20);
-      }
-      &--location{
-        iframe{
-        padding:0 10%;
-        }
-      }
+    
       &--socialMedia{
       @include flex(row,center,center,20);
         
@@ -243,6 +242,22 @@ padding:0 10%;
   .contact{
     &__form{
       min-width:100%;
+    }
+  }
+  .contact__information{
+    &--info{
+      @include flex(row,center,center,30);
+      flex-wrap:wrap;
+      max-width: rem(400);
+      margin:0 auto;
+      
+      &--data{
+        flex:1 1 80%;    
+      }
+      &--location{
+        flex:1 1 80%;
+      
+      }
     }
   }
   .footer{

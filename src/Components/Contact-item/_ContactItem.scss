@@ -1,0 +1,17 @@
+.contact__item{
+  @include flex(row,start,top,10);
+  padding-bottom:rem(15);
+  &--icon{
+    color:$first-color;
+    font-size:$bigger-font-size;
+  }
+  &--info{
+    &--title{
+      font-size: $bigger-font-size;
+      font-weight:$font-medium;
+    }
+    &--data{
+      color:$text-color;
+    }
+  }
+}

@@ -4,13 +4,14 @@ import { FaGithub } from "react-icons/fa";
 import { PiLinkedinLogoBold } from "react-icons/pi";
 import { FaDribbble } from "react-icons/fa";
 import Container from '../../Components/Container/Container';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
+import { FaArrowRight } from "react-icons/fa";
 
 const Home = (props) => {
-  const [viewLocation ,setViewLocation] = useState(false);
+  // const [viewLocation ,setViewLocation] = useState(false);
   
-    let location = viewLocation?"home__aboutMe--location home__aboutMe--location--active":"home__aboutMe--location";
-    let locationButton = viewLocation?"Hide Location":"View Location";
+  //   let location = viewLocation?"home__aboutMe--location home__aboutMe--location--active":"home__aboutMe--location";
+  //   let locationButton = viewLocation?"Hide Location":"View Location";
   
 
   //=================    animation  ==================== 
@@ -39,16 +40,16 @@ const Home = (props) => {
           </p>
         </div>
         <div className="home__aboutMe--button">
-          <a href="documents/CV.pdf" download={true}>
-          <PrimaryButton >Download CV</PrimaryButton>
-          </a>
-          <a href="#" onClick={()=>setViewLocation(prevLocation =>!prevLocation)}>
+        <a href="#Contact">
+        <PrimaryButton >Contact Me <span > <FaArrowRight/></span></PrimaryButton>
+        </a>      
+          {/* <a href="#" onClick={()=>setViewLocation(prevLocation =>!prevLocation)}>
           <PrimaryButton >{locationButton}</PrimaryButton>
-          </a>
+          </a> */}
         </div>
-        <div className={location}>  
-          <iframe  frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=500&amp;height=400&amp;hl=en&amp;q=Syria/Duma/+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps tracker sport</a></iframe>          
-        </div>
+        {/* <div className={location}>  
+                
+        </div> */}
         <div className="home__aboutMe--socialMedia">
           <a href="https://github.com/Belal-01?tab=repositories" target='_blank'><span className="socialMedia__icon"><FaGithub /></span></a>
           <a href=""><span className="socialMedia__icon"><FaDribbble /></span></a>

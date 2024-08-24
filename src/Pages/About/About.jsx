@@ -3,12 +3,16 @@ import PrimaryButton from '../../Components/PrimaryButton/Button'
 import Container from '../../Components/Container/Container';
 import { useEffect } from 'react';
 import Progress from '../../Components/Progrees/Progress';
+import { FaDownload } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa";
 
 const About = (props) => {
 
   useEffect(()=>{
     props.anim.reveal('.About__data ,.skills__describtion',{origin:'left'})
     props.anim.reveal('.About__img ,.skills__gall',{origin:'right'})
+    props.anim.reveal('.skills__gallery--skill',{origin:'top',interval:200})
+
   },[])
 
   
@@ -66,9 +70,9 @@ const About = (props) => {
         </p>
       </div>
       <div className="About__data--button">
-        <a href="#Contact">
-        <PrimaryButton >Contact Me</PrimaryButton>
-        </a>
+      <a href="documents/CV.pdf" download={true}>
+          <PrimaryButton >Download CV <FaDownload/></PrimaryButton>
+       </a>
       </div>     
     </div>
     </section>
@@ -94,7 +98,7 @@ const About = (props) => {
         <div className="skills__describtion--button">
             <a href="#Projects">
           <PrimaryButton>
-            see Projects        
+            See Projects <FaArrowRight/>        
           </PrimaryButton>
             </a>
         </div>

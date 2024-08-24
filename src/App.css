@@ -206,6 +206,28 @@ section {
   font-size: 0.625rem;
 }
 
+.contact__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: top;
+  -moz-column-gap: 0.625rem;
+       column-gap: 0.625rem;
+  row-gap: 0.625rem;
+  padding-bottom: 0.9375rem;
+}
+.contact__item--icon {
+  color: hsl(162, 100%, 40%);
+  font-size: 1.25rem;
+}
+.contact__item--info--title {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.contact__item--info--data {
+  color: hsl(228, 8%, 65%);
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -457,27 +479,6 @@ section {
   margin: 1.875rem 0;
   max-width: 28.125rem;
 }
-.home__aboutMe--location {
-  width: 100%;
-  height: 0;
-  position: relative;
-  padding: 0 0.625%rem;
-  transform: scaleY(0);
-  transition: height 0.4s, transform 0.4s;
-}
-.home__aboutMe--location--active {
-  height: 12.5rem;
-  transform: scaleY(1);
-}
-.home__aboutMe--location iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 0.625rem;
-  filter: invert(100%);
-}
 .home__aboutMe--button {
   margin: 1.875rem 0;
   display: flex;
@@ -683,6 +684,7 @@ section {
   -moz-column-gap: 1.25rem;
        column-gap: 1.25rem;
   row-gap: 1.25rem;
+  flex-wrap: wrap;
   width: 100%;
 }
 .contact__form--email input {
@@ -704,6 +706,9 @@ section {
 }
 .contact__form--email input:focus {
   outline: 0.125rem outset hsl(162, 100%, 40%);
+}
+.contact__form--email input:nth-of-type(3) {
+  flex: 1 1 80%;
 }
 .contact__form--message {
   width: 100%;
@@ -728,6 +733,44 @@ section {
 }
 .contact__form--message textarea:focus {
   outline: 0.125rem outset hsl(162, 100%, 40%);
+}
+
+.contact__information {
+  padding: 3.75rem 0;
+}
+.contact__information--header {
+  text-align: center;
+  padding-bottom: 3.125rem;
+}
+.contact__information--info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: top;
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+  row-gap: 2.5rem;
+}
+.contact__information--info--data {
+  flex: 1 1 50%;
+}
+.contact__information--info--data-header {
+  padding-bottom: 1.25rem;
+}
+.contact__information--info--location {
+  flex: 1 1 40%;
+  height: 18.75rem;
+  position: relative;
+  padding-left: 0.3125%rem;
+}
+.contact__information--info--location iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.625rem;
+  filter: invert(100%);
 }
 
 @media (max-width: 430px) {
@@ -758,15 +801,6 @@ section {
   .home__aboutMe {
     flex: 1 1 80%;
     text-align: center;
-  }
-  .home__aboutMe--button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    -moz-column-gap: 0.625rem;
-         column-gap: 0.625rem;
-    row-gap: 0.625rem;
   }
   .home__aboutMe--socialMedia {
     display: flex;
@@ -861,6 +895,15 @@ section {
   .contact__form--email input {
     flex: 1 1 80%;
   }
+  .contact__information--info {
+    flex-wrap: wrap;
+  }
+  .contact__information--info--data {
+    flex: 1 1 80%;
+  }
+  .contact__information--info--location {
+    flex: 1 1 80%;
+  }
   .footer {
     display: flex;
     flex-direction: row;
@@ -930,18 +973,6 @@ section {
     text-align: center;
   }
   .home__aboutMe--discrebtion {
-    padding: 0 10%;
-  }
-  .home__aboutMe--button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    -moz-column-gap: 1.25rem;
-         column-gap: 1.25rem;
-    row-gap: 1.25rem;
-  }
-  .home__aboutMe--location iframe {
     padding: 0 10%;
   }
   .home__aboutMe--socialMedia {
@@ -1036,6 +1067,24 @@ section {
   }
   .contact__form {
     min-width: 100%;
+  }
+  .contact__information--info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 1.875rem;
+         column-gap: 1.875rem;
+    row-gap: 1.875rem;
+    flex-wrap: wrap;
+    max-width: 25rem;
+    margin: 0 auto;
+  }
+  .contact__information--info--data {
+    flex: 1 1 80%;
+  }
+  .contact__information--info--location {
+    flex: 1 1 80%;
   }
   .footer {
     display: flex;
