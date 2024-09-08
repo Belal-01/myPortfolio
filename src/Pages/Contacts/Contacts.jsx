@@ -21,8 +21,6 @@ const Contacts = (props) => {
     props.anim.reveal('.contact__information--info--data-header',{origin:'top'});
     props.anim.reveal('.input',{origin:'right',interval:200});
 
-
-
    },[])
 
     const sendEmail = (e)=>{    

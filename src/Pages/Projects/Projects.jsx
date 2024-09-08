@@ -20,7 +20,7 @@ const Projects = ({anim}) => {
         <Project anim={anim} img = {'NoteApp'} title={'Note App'} info={'Responseive website Coded using React ,Sass, with use of Database (Note:Turn on VPN)'} url={'https://note-app-react-app.onrender.com'}/>
         {/* <Project anim={anim} img = {'facebook'} title={'Facebook'} info={'Main page of Facebook Coded using HTML , Sass '} url = {'https://belal-01.github.io/facebook-web/'}/> */}
         <Project anim={anim} img = {'Tenzies'} title={'Tenzes Game'} info={'Coded using React ,implementation of state managment'} url = {'https://tenzies-react-app.onrender.com'}/>
-        {/* <Project anim={anim} img = {'youtube'} title={'Youtube Design'} info={'Main page of Youtube  Coded using ,HTML,CSS'} url = {'https://belal-01.github.io/youtube/'}/> */}
+        <Project anim={anim} img = {'quiz app'} title={'Quiz App'} info={'I create this Quiz app to test your skills in web development'} url = {'https://quiz-app-9hi8.onrender.com/'}/>
         <Project anim={anim} img = {'Portfolio'} title={'Portfolio Design'} info={'Coded using javaScript,HTML,Sass,'} url = {'https://portfolio-grwg.onrender.com/'}/>
 
 
