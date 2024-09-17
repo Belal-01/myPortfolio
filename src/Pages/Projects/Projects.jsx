@@ -22,7 +22,7 @@ const Projects = ({anim}) => {
         <Project anim={anim} img = {'KanBan'} title={'Todo List'} info={'Coded using React , React-router,state managment using zustand'} url = {'https://kanban-6ln6.onrender.com/'}/>
         <Project anim={anim} img = {'Tenzies'} title={'Tenzes Game'} info={'Coded using React ,implementation of state managment'} url = {'https://tenzies-react-app.onrender.com'}/>
         <Project anim={anim} img = {'quiz app'} title={'Quiz App'} info={'Coded using React ,React Router,state managment using React-redux'} url = {'https://quiz-app-9hi8.onrender.com/'}/>
-        <Project anim={anim} img = {'Portfolio'} title={'Portfolio Design'} info={'Coded using javaScript,HTML,Sass,'} url = {'https://portfolio-grwg.onrender.com/'}/>
+        {/* <Project anim={anim} img = {'Portfolio'} title={'Portfolio Design'} info={'Coded using javaScript,HTML,Sass,'} url = {'https://portfolio-grwg.onrender.com/'}/> */}
 
 
       </div>
