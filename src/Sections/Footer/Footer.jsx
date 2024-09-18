@@ -37,7 +37,7 @@ const Footer = (props) => {
       <div className="footer__contact">
       <a href="https://www.instagram.com/bilalmusstafa?igsh=azRnbmhkZmJnbjVx" target="_blank"><span className="contact__icon"><BsInstagram /></span></a>
       <a href="https://www.facebook.com/belal.khobieh?mibextid=JRoKGi" target="_blank"><span className="contact__icon"><FaFacebook /></span></a>
-      <a href="https://www.linkedin.com/in/belal-khobieh-427477324" target="_blank"><span className="contact__icon"><PiLinkedinLogoBold /></span></a>
+      <a href="https://www.linkedin.com/in/belal-mustafa-khubieh-427477324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><span className="contact__icon"><PiLinkedinLogoBold /></span></a>
       </div>
       <div className="footer__copyRight">
         <small>
