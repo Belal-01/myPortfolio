@@ -192,6 +192,18 @@ section {
   color: hsl(228, 8%, 95%);
   padding-left: 0.4375rem;
 }
+.project_resources {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 0rem;
+       column-gap: 0rem;
+  row-gap: 0rem;
+}
+.project_resources--github a {
+  font-size: 0.75rem;
+}
 .project:hover .project__review {
   bottom: -1px;
   opacity: 1;

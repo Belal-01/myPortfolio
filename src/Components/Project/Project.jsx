@@ -24,14 +24,24 @@ const Project = (props) => {
               {props.info}
           </p>
         </div>
+        <div className="project_resources">
+        <div className="project_resources--github">
+        
+            <a className="project__review--viewer--link-icon" href={props.github} target='_blank'>
+          GitHub - 
+              {/* <FaExternalLinkAlt /> */}
+            </a>
+          
+        </div>
         <div className="project__review--viewer">
           <span className="">
-          View Demo  
+             - View Demo  
             <a className="project__review--viewer--link-icon" href={props.url} target='_blank'>
               <FaExternalLinkAlt />
             </a>
           </span>
         </div>
+        </div>   
       </div>      
     </div>
   )

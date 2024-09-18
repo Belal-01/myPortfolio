@@ -49,6 +49,16 @@
     }
  
   }
+  &_resources{
+    @include flex(row,center ,center);
+    &--github{
+      a{
+
+        font-size: $smaller-font-size;
+        
+      }
+    }
+  }
 
   &:hover &__review{
     bottom:-1px;
