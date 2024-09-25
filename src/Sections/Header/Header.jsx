@@ -3,6 +3,8 @@ import { IoIosMenu } from "react-icons/io";
 import { IoCloseOutline } from "react-icons/io5";
 import NavItem from '../../Components/NavItem/NavItem';
 import { FaLaptopCode } from "react-icons/fa";
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 
 
 
@@ -18,7 +20,7 @@ const Header = () => {
   })
   
   React.useEffect(()=>{
-   const  sections = document.querySelectorAll('.section');
+   const sections = document.querySelectorAll('.section');
     window.addEventListener('scroll',()=>{
       blurHeader();
       activeNavLink(sections);
@@ -35,10 +37,7 @@ const Header = () => {
     })
       
     },[])
-    
 
-  
-  
 
    React.useEffect(()=>{
     localStorage.setItem('colors',JSON.stringify(menuActiveColor));
@@ -97,12 +96,21 @@ const activeNavLink = useCallback((sections)=>{
   })
 },[])
 
+  useGSAP(()=>{
+    gsap.from('.myName',{
+      y:20,
+      opacity:0,
+      delay:.2,
+      duration:1
+    })
+  })
+
 
 
   return (
     <div className={navClass}>
       <div className="navbar-logo">
-        <h4>
+        <h4 className='myName'>
           <span className="logoLapIcon">
           <FaLaptopCode/> 
           </span>

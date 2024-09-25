@@ -6,9 +6,31 @@ import { FaTelegramPlane } from "react-icons/fa";
 import Container from '../../Components/Container/Container';
 import { useEffect } from 'react';
 import { FaArrowRight } from "react-icons/fa";
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 
 const Home = (props) => {
-  
+   
+
+  useGSAP(()=>{
+    gsap.fromTo('.icon',{
+      x:-500,  
+      opacity:0,
+           
+    },{
+      x:0,  
+      delay:1,
+      opacity:1,
+      rotate:360,
+      duration:2,
+      stagger:{
+        amount:1,
+        axis:'x',
+        from:'end'
+      }
+      
+    })
+  },[])
 
   //=================    animation  ==================== 
 
@@ -25,7 +47,7 @@ const Home = (props) => {
           <span className='second-sub-title'> I'am</span>
         </div>
         <div className="home__aboutMe--title">
-          <span className="sub-title">Belal Mustafa</span>
+          <span className="sub-title ">Belal Mustafa</span>
         </div>
         <div className="home__aboutMe--joptitle">
           <span className="second-title">Frontend web developer</span>
@@ -41,12 +63,18 @@ const Home = (props) => {
         </a> 
         </div>     
         <div className="home__aboutMe--socialMedia">
-          <a href="https://github.com/Belal-01?tab=repositories" target='_blank'><span className="socialMedia__icon"><FaGithub /></span></a>
-          <a href="https://www.linkedin.com/in/belal-mustafa-khubieh-427477324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='_blank'><span className="socialMedia__icon"><PiLinkedinLogoBold /></span></a>
-          <a href="http://t.me/Belal_343" target='_blank'><span className="socialMedia__icon"><FaTelegramPlane/></span></a>
+          <a href="https://github.com/Belal-01?tab=repositories" target='_blank' className='icon'>
+          <span className="socialMedia__icon "><FaGithub /></span>
+          </a>
+          <a href="https://www.linkedin.com/in/belal-mustafa-khubieh-427477324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='_blank' className='icon'>
+          <span className="socialMedia__icon"><PiLinkedinLogoBold /></span>
+          </a>
+          <a href="http://t.me/Belal_343" target='_blank' className='icon'>
+          <span className="socialMedia__icon"><FaTelegramPlane/></span>
+          </a>
         </div>
       </div>
-      <div className="home__img">
+      <div className="home__img ">
         <svg className = "home__blob" viewBox="0 0 550 591" xmlns="http://www.w3.org/2000/svg">
         <mask id="maskBlob" mask-type="alpha">
         <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
