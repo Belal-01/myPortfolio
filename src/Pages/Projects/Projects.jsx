@@ -16,7 +16,8 @@ const Projects = ({anim}) => {
       <div className="projects__gallery">
         <Project anim={anim} img = {'portfolio2'} title={'My Portfolio'} info={'Responseive website Coded using React,Sass'} url = {'https://belalmustafa-portfolio-reactapp.onrender.com/'} github={'https://github.com/Belal-01/myPortfolio.git'}/>
         <Project anim={anim} img = {'GamesViewer'} title = {'Games Viewer'} info={'Responseive website Coded using React ,Sass, with use of Database (Note:Turn on VPN)'} url ={'https://games-viewer-reactapp.onrender.com'} github={'https://github.com/Belal-01/CYBROG-Game.git'}/>
-        <Project anim={anim} img = {'Amazon'} title={'Amazon '} info={'Responseive website Coded using JavaScript,HTML ,Css'} url ={'https://belal-01.github.io/Amazon-app/amazon.html'} 
+        <Project anim={anim} img = {'iPhone'} title = {'3D iPhone'} info={'A website resembling Apples iPhone 15 Pro page developed using React , Three.js and GSAP.'} url ={'https://threed-iphonee.onrender.com'} github={'https://github.com/Belal-01/3D-iPhon.git'}/>
+        <Project anim={anim} img = {'Amazon'} title={'Amazon '} info={'A website resembling Amazone web pages developed using JavaScript,HTML ,Css'} url ={'https://belal-01.github.io/Amazon-app/amazon.html'} 
         github={'https://github.com/Belal-01/Amazon-app.git'}/>
         <Project anim={anim} img = {'NoteApp'} title={'Note App'} info={'Responseive website Coded using React ,Sass, with use of Database (Note:Turn on VPN)'} url={'https://note-app-react-app.onrender.com'} github={'https://github.com/Belal-01/Note-app.git'}/>
         {/* <Project anim={anim} img = {'facebook'} title={'Facebook'} info={'Main page of Facebook Coded using HTML , Sass '} url = {'https://belal-01.github.io/facebook-web/'}/> */}
