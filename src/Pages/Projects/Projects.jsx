@@ -16,7 +16,7 @@ const Projects = ({anim}) => {
       <div className="projects__gallery">
         <Project anim={anim} img = {'portfolio2'} title={'My Portfolio'} info={'Responseive website Coded using React,Sass'} url = {'https://belalmustafa-portfolio-reactapp.onrender.com/'} github={'https://github.com/Belal-01/myPortfolio.git'}/>
 
-        <Project anim={anim} img = {'znCompany'} title={'Construction Company'} info={'Multi Pages website for instruction and building company with authentication and notification systems and api integrating'} url = {'https://zn-constructioncompany.onrender.com'}
+        <Project anim={anim} img = {'znCompany'} title={'Construction Company'} info={'Multi Pages website for instruction and building Company'} url = {'https://zn-constructioncompany.onrender.com'}
         github={'https://github.com/Belal-01/ZN-ConstructionCompany.git'}/>
 
         <Project anim={anim} img = {'GamesViewer'} title = {'Games Viewer'} info={'Responseive website Coded using React ,Sass, with use of Database (Note:Turn on VPN)'} url ={'https://games-viewer-reactapp.onrender.com'} github={'https://github.com/Belal-01/CYBROG-Game.git'}/>
