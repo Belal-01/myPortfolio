@@ -186,6 +186,7 @@ section {
 }
 .project__review--viewer {
   font-size: 0.75rem;
+  padding-left: 0.625rem;
 }
 .project__review--viewer--link-icon {
   font-size: 1rem;

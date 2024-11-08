@@ -37,8 +37,10 @@
         margin-bottom:3%;
       }
     }
+
     &--viewer{  
       font-size: $smaller-font-size;
+      padding-left: rem(10);
      // margin-bottom: rem(10);
       
       &--link-icon{
