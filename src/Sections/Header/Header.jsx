@@ -140,12 +140,12 @@ const activeNavLink = useCallback((sections)=>{
              About
             </NavItem>
           </li>
-          <li>
+          {/* <li>
            <NavItem href='#Services' active={menuActiveColor.Services} handleActiveColor={handleActiveNavItemColor}
            handleSideBar = {closeSideBar}>
              Services
             </NavItem>
-          </li>
+          </li> */}
           <li>
            <NavItem href='#Projects' active={menuActiveColor.Projects} handleActiveColor={handleActiveNavItemColor}
            handleSideBar = {closeSideBar}>

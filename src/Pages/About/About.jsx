@@ -66,7 +66,7 @@ const About = (props) => {
       </div>
       <div className="About__data--discrebtion">
         <p>
-         As a junior Front-End Developer,I possess an impressive arsenal of skills in HTML ,CSS ,javaScript ,React ,Bootstrap and Sass ,I excel in designing and maintaining responsive websites that offer a smooth user experience,My expertise lies in crafting dynamic ,engaging interfaces throw writing clean and optimized code and utilizing cutting-edge development tools and techniques.
+         As a junior Front-End Developer,I possess an impressive arsenal of skills in HTML ,CSS ,javaScript ,React , TailWindCss ,Bootstrap and Sass ,I excel in designing and maintaining responsive websites that offer a smooth user experience,My expertise lies in crafting dynamic ,engaging interfaces throw writing clean and optimized code and utilizing cutting-edge development tools and techniques.
         </p>
       </div>
       <div className="About__data--button">

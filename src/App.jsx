@@ -28,7 +28,7 @@ function App() {
       <Header anim ={sr}/>       
       <Home anim={sr}/>
       <About anim ={sr}/>
-      <Services anim ={sr}/>
+      {/* <Services anim ={sr}/> */}
       <Projects anim ={sr}/>
       <Contacts anim ={sr}/>
    
