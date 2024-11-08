@@ -15,7 +15,7 @@ const Projects = ({anim}) => {
       </div>
       <div className="projects__gallery">
         <Project anim={anim} img = {'portfolio2'} title={'My Portfolio'} info={'Responseive website Coded using React,Sass'} url = {'https://belalmustafa-portfolio-reactapp.onrender.com/'} github={'https://github.com/Belal-01/myPortfolio.git'}/>
-        <Project anim={anim} img = {'znCompany'} title={'Building and construction Company'} info={'Multi Pages website for instruction and building company with authentication and notification  systems and api integrating'} url = {'https://zn-constructioncompany.onrender.com'}/>
+        <Project anim={anim} img = {'znCompany'} title={'Construction Company'} info={'Multi Pages website for instruction and building company with authentication and notification systems and api integrating'} url = {'https://zn-constructioncompany.onrender.com'}/>
         <Project anim={anim} img = {'GamesViewer'} title = {'Games Viewer'} info={'Responseive website Coded using React ,Sass, with use of Database (Note:Turn on VPN)'} url ={'https://games-viewer-reactapp.onrender.com'} github={'https://github.com/Belal-01/CYBROG-Game.git'}/>
         <Project anim={anim} img = {'iPhone'} title = {'3D iPhone'} info={'A website resembling Apples iPhone 15 Pro page developed using React , Three.js and GSAP.'} url ={'https://threed-iphonee.onrender.com'} github={'https://github.com/Belal-01/3D-iPhon.git'}/>
         <Project anim={anim} img = {'Amazon'} title={'Amazon '} info={'A website resembling Amazone web pages developed using JavaScript,HTML ,Css'} url ={'https://belal-01.github.io/Amazon-app/amazon.html'} 
