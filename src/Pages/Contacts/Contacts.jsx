@@ -96,7 +96,7 @@ const Contacts = (props) => {
             
             <ContactItem title = {'Phone'} data={'+963-981-091-343'}/>
             <ContactItem title = {'Email'} data={'belalkhobieh343@gmail.com'}/>
-            <ContactItem title = {'Address'} data={'Duma-Damascus-Syria'}/>
+            <ContactItem title = {'Address'} data={'Syria-Damascus'}/>
             
           </div>
           <div className="contact__information--info--location">
