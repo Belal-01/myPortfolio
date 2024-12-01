@@ -19,6 +19,9 @@ const Projects = ({anim}) => {
         <Project anim={anim} img = {'znCompany'} title={'Construction Company'} info={'Multi Pages website for instruction and building Company'} url = {'https://zn-constructioncompany.onrender.com'}
         github={'https://github.com/Belal-01/ZN-ConstructionCompany.git'}/>
 
+        <Project anim={anim} img = {'storeDashboard'} title={'Store Dashboard'} info={'Multi Pages website with analytics charts to controll a products store'} url = {'https://storedashboard.onrender.com/'}
+        github={''}/>
+
         <Project anim={anim} img = {'GamesViewer'} title = {'Games Viewer'} info={'Responseive website Coded using React ,Sass, with use of Database (Note:Turn on VPN)'} url ={'https://games-viewer-reactapp.onrender.com'} github={'https://github.com/Belal-01/CYBROG-Game.git'}/>
         <Project anim={anim} img = {'iPhone'} title = {'3D iPhone'} info={'A website resembling Apples iPhone 15 Pro page developed using React , Three.js and GSAP.'} url ={'https://threed-iphonee.onrender.com'} github={'https://github.com/Belal-01/3D-iPhon.git'}/>
         <Project anim={anim} img = {'Amazon'} title={'Amazon '} info={'A website resembling Amazone web pages developed using JavaScript,HTML ,Css'} url ={'https://belal-01.github.io/Amazon-app/amazon.html'} 
