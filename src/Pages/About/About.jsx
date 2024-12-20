@@ -70,7 +70,7 @@ const About = (props) => {
         </p>
       </div>
       <div className="About__data--button">
-      <a href="documents/FinalCv.pdf" download={true}>
+      <a href="documents/CV.pdf" download={true}>
           <PrimaryButton >Download CV <FaDownload/></PrimaryButton>
       </a>
       </div>     
