@@ -19,7 +19,7 @@ const Projects = ({anim}) => {
         <Project anim={anim} img = {'znCompany'} title={'Construction Company'} info={'Multi Pages website for instruction and building Company'} url = {'https://zn-constructioncompany.onrender.com'}
         github={'https://github.com/Belal-01/ZN-ConstructionCompany.git'}/>
 
-        <Project anim={anim} img = {'storeDashboard'} title={'Store Dashboard'} info={'Multi Pages website with analytics charts to controll a products store'} url = {'https://storedashboard.onrender.com/'}
+        <Project anim={anim} img = {'storeDashboard'} title={'Store Dashboard'} info={'Displays data analytics using charts to present the store data in an easy way, the dashboard is linked with local apis'} url = {'https://storedashboard.onrender.com/'}
         github={''}/>
 
         <Project anim={anim} img = {'GamesViewer'} title = {'Games Viewer'} info={'Responseive website Coded using React ,Sass, with use of Database (Note:Turn on VPN)'} url ={'https://games-viewer-reactapp.onrender.com'} github={'https://github.com/Belal-01/CYBROG-Game.git'}/>
